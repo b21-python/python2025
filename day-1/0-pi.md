@@ -33,7 +33,7 @@ It will turn on as soon as the USB power is connected
 > IMPORTANT: Unpluging the USB power before the Pi fully powers off can corrupt the SD card
 
 Shutdown checklist
-1. Choose shutdown by clicking the Berry->Logout then choosing Shutdown
+1. Choose shutdown by clicking Berry->Logout then choosing Shutdown
 2. Display will go black but there will still be text at the bottom of the screen.  Wait until this goes away
 3. The Activity light will still be blinking.  Wait until it stops blinking
 4. The display will go into sleep mode
