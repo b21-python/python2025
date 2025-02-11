@@ -7,7 +7,7 @@ screen = pygame.display.set_mode((640,480))
 clock = pygame.time.Clock()
 running = True
 
-# Player
+# Load Player
 player = pygame.image.load('dude.png')
 
 # create a variable to store player position so we can modify it based on keyboard input
@@ -22,7 +22,7 @@ while running:
     # Set screen color
     screen.fill("orange")
 
-    # Draw dude
+    # Draw player
     screen.blit(player, player_pos)
 
     # update player position based on keys pressed
