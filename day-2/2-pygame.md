@@ -160,26 +160,3 @@ pygame.quit()
 ```
 
 > NOTE: You can move the circle off of the screen.  How would you limit the movement so the circle cannot go off the screen?
-
-
-## Replace the circle with an image
-
-Pygame can load images and draw them on the screen.
-
-
-```python
-# Load Player
-player = pygame.image.load('dude.png')
-```
-
-> Loading the image is expensive so it should be done outside the game loop so it's only done once.
-
-
-Replace the code to draw the circle with this code to draw the player image.
-
-```python
-    # Draw player
-    screen.blit(player, player_pos)
-```
-
-> Notice we are using a function called `blit`, think of it like a copy.  We are copying the player pixels to a position on the screen.  The term has origins in old computer systems where programs more directly manipulated the computers memory.

@@ -12,6 +12,11 @@ This repository contains code examples, documentation, starter resources for bui
 - `terminal`: A text based interface that allows you to interact with a computer by entering commands.  It is also called the console, command line or shell.  We will use it to manage our git repositories start our development environment and other tasks.
 - `thonny`: A user-friendly Python development environment.  We will use this to run and debug our code and games
 
+## Helpful links
+
+- [Pygame docs](https://www.pygame.org/docs/)
+  - [Newbie Guide](https://www.pygame.org/docs/tut/newbieguide.html)
+
 
 ## Get Started
 To get started download this repository from the Terminal using the commands:
