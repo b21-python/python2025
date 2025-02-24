@@ -48,7 +48,7 @@ vehicles = [
 ]
 
 traffic_speed = 2 * line_speed
-spawn_rate = 1000 #ms
+spawn_rate = 60 # frames
 spawn_timer = spawn_rate
 
 # Create Lanes
@@ -119,7 +119,8 @@ while running:
     # Render what you've drawn to the screen
     pygame.display.flip()
 
-    spawn_timer -= clock.tick(60) # limit to 60 FPS
+    spawn_timer -= 1
+    clock.tick(60) # limit to 60 FPS
 
 print("you died")
 running = True

@@ -205,14 +205,15 @@ Just like with lines we can add a loop to draw the vehicles after we blit the pl
 Below `traffic_speed` add variables to control how often traffic is spawned
 
 ```python
-spawn_rate = 1000 #ms
+spawn_rate = 60 # frames
 spawn_timer = spawn_rate
 ```
 
-The `spawn_timer` will count down milliseconds until it is less than or equal to zero, then we will spawn a new vehicle.  To do this we need to track elapsed time.  The `clock.tick(60)` method we use to limit the game to 60 FPS can help us do this because it returns the number of milliseconds since the last call to `tick`.  Update that line to decrement `spawn_timer`.
+The `spawn_timer` will count down frames until it is less than or equal to zero, then we will spawn a new vehicle.  To do this we need to decrement it once in each game loop.  Add the code to decrement `spawn_timer` by the `clock.tick(60)` method we use to limit the game to 60 FPS.
 
 ```python
-    spawn_timer -= clock.tick(60) # limit to 60 FPS
+    spawn_timer -= 1
+    clock.tick(60) # limit to 60 FPS
 ```
 
 In the game loop after we draw the player but before we draw traffic add this code to randomly generate traffic.
