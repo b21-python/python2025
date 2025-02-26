@@ -21,7 +21,7 @@ def prepareTraffic(sprite):
     return cropAlpha(rotated_sprite)
 
 # Load Player
-player = cropAlpha(pygame.image.load('sprites/car.png'))
+player = cropAlpha(pygame.image.load('sprites/taxi.png'))
 
 # Line parameters
 line_speed = 5
